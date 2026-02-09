@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>TravelLog | My Adventures</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="wrapper">
+        <header>
+            <h1>My Travel <span>Journal</span></h1>
+            <p>Track every landmark and memory.</p>
+        </header>
+        <footer>
+          <p>@ 2006 Mqthew</p>
+        </footer>
+
+        <section class="form-container">
+            <form id="travel-form">
+                <div class="input-group">
+                    <input type="text" id="loc" placeholder="Location (e.g. Nairobi, Kenya)" required>
+                    <input type="text" id="land" placeholder="Landmarks" required>
+                </div>
+                <div class="input-group">
+                    <input type="text" id="time" placeholder="Time of Year" required>
+                    <textarea id="notes" placeholder="Notes & Memories..."></textarea>
+                </div>
+                <button type="submit" id="add-btn">Save Destination</button>
+            </form>
+        </section>
+
+        <section id="display-area">
+            <!-- JavaScript will inject cards here -->
+        </section>
+    </div>
+  
+    <script src="script.js"></script>
+</body>
+</html>

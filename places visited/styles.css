@@ -1,0 +1,85 @@
+/* Clean & Modern Styles */
+body {
+    font-family: 'Segoe UI', Roboto, sans-serif;
+    background-color: #f0f2f5;
+    color: #1c1e21;
+    margin: 0;
+    padding: 40px 20px;
+}
+
+.wrapper { max-width: 700px; margin: auto; }
+
+header { text-align: center; margin-bottom: 30px; }
+header h1 span { color: #007bff; }
+
+.form-container {
+    background: white;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    margin-bottom: 30px;
+}
+
+.input-group { display: flex; gap: 10px; margin-bottom: 10px; }
+input, textarea {
+    flex: 1;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 15px;
+}
+
+textarea { height: 80px; resize: none; }
+
+#add-btn {
+    width: 100%;
+    padding: 14px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+#add-btn:hover { background-color: #0056b3; }
+
+/* Place Cards */
+.card {
+    background: white;
+    padding: 20px;
+    border-radius: 12px;
+    margin-bottom: 15px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+    border-left: 6px solid #007bff;
+    position: relative;
+    transition: transform 0.2s;
+}
+
+.card:hover { transform: translateY(-2px); }
+
+.card h3 { margin: 0 0 5px 0; color: #007bff; cursor: pointer; }
+.card .hint { font-size: 12px; color: #888; margin-bottom: 10px; }
+
+.delete-btn {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background: #ff4d4d;
+    color: white;
+    border: none;
+    padding: 6px 12px;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.details {
+    display: none;
+    margin-top: 15px;
+    padding-top: 15px;
+    border-top: 1px solid #eee;
+    font-size: 14px;
+}
+
+.details.active { display: block; }
